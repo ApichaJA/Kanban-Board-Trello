@@ -1,14 +1,17 @@
+#app {
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
 .box {
-    color: white;
-    width: 50vh;
-    height: 50vh;
-    background-color: #343434;
-    margin: 1em;
+    color: black;
+    background-color: #dadada;
+    margin: .5vw;
+    padding: .5vw;
+    border-radius: 5px;
 }
 
 .sec-box {
-    color: white;
-    width: 30vh;
-    height: 40vh;
-    background-color: #458894;
+    color: black;
+    border-radius: 5px;
+    background-color: #ffffff;
 }

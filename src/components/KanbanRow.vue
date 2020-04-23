@@ -1,22 +1,30 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col box">
-        <h1>To Do</h1>
-        <div class="col sec-box">
+      <div class="col-xl box py-2">
+        <h3>To Do</h3>
+        <div class="col-xl sec-box">
+          <div>Math</div>
         </div>
       </div>
-      <div class="col box">
-        <h1>In Progress</h1>
-        <div class=" col sec-box">
+
+
+
+      <div class="col-xl box py-2">
+        <h3>In Progress</h3>
+        <div class="col-xl sec-box">
+
         </div>
       </div>
-      <div class="col box">
-        <h1>Completed</h1>
+
+
+      <div class="col-xl box py-2">
+        <h3>Completed</h3>
         <div class="sec-box">
         </div>
       </div>
     </div>
+
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div class="container-fluid">
-      <div class="col-12 py-3">
+    <div class="container">
+      <div class="col-12 py-5">
         <h1>Kanban Board</h1>
       </div>
       <div class="py-5">
