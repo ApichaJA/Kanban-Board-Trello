@@ -1,0 +1,14 @@
+.box {
+    color: white;
+    width: 50vh;
+    height: 50vh;
+    background-color: #343434;
+    margin: 1em;
+}
+
+.sec-box {
+    color: white;
+    width: 30vh;
+    height: 40vh;
+    background-color: #458894;
+}
