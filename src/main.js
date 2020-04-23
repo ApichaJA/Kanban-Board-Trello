@@ -1,8 +1,37 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
+import firebase from 'firebase/app'
+
 
 Vue.config.productionTip = false
 
+const config = {
+    apiKey: "AIzaSyD8Oux0180gy15e2DxfthmU1g07vwAzfL0",
+    authDomain: "tedxcharoenkrung-f6d01.firebaseapp.com",
+    databaseURL: "https://tedxcharoenkrung-f6d01.firebaseio.com",
+    projectId: "tedxcharoenkrung-f6d01",
+    storageBucket: "tedxcharoenkrung-f6d01.appspot.com",
+    messagingSenderId: "972577017098",
+};
+firebase.initializeApp(config)
+
 new Vue({
-  render: h => h(App),
+    router,
+    render: h => h(App),
 }).$mount('#app')
+
+/*
+
+const config = {
+  apiKey: 'YOUR_PROJECT_API_KEY',
+  authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
+  databaseURL: 'https://YOUR_PROJECT_ID.firebaseio.com',
+  projectId: 'YOUR_PROJECT_ID',
+  storageBucket: 'YOUR_PROJECT_ID.appspot.com',
+  messagingSenderId: 'YOUR_SENDER_ID'
+};
+firebase.initializeApp(config)
+
+
+*/
