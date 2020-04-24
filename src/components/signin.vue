@@ -8,10 +8,10 @@
       <div class="col-xl py-2">
          <input v-model="password" type="password" class="form-control" placeholder="Password">
       </div>
+    </form>
       <button type="submit" class="btn ">Login</button>
     <button @click="loginWithGmail" class="btn">Login in with Gmail
     </button>
-    </form>
   </div>
 </template>
 

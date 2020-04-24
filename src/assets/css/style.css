@@ -4,7 +4,7 @@
 
 .box {
     color: black;
-    background-color: #dadada;
+    background-color: #ff575d;
     margin: .5vw;
     padding: .5vw;
     border-radius: 5px;
@@ -14,4 +14,8 @@
     color: black;
     border-radius: 5px;
     background-color: #ffffff;
+}
+
+.detail {
+    padding: .5em;
 }

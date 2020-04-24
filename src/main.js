@@ -1,10 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import firebase from 'firebase/app'
-
-
-Vue.config.productionTip = false
+import firebase from "firebase";
 
 const config = {
     apiKey: "AIzaSyD8Oux0180gy15e2DxfthmU1g07vwAzfL0",
@@ -14,11 +11,36 @@ const config = {
     storageBucket: "tedxcharoenkrung-f6d01.appspot.com",
     messagingSenderId: "972577017098",
 };
-firebase.initializeApp(config)
 
+firebase.initializeApp(config);
+
+
+Vue.config.productionTip = false
+    //const UID = firebase.auth().uid;
+    //const databse = firebase.database();
+    //const uidRef = databse.ref(UID);
 new Vue({
     router,
     render: h => h(App),
+    methods: {
+        data() {
+            return {
+                kanbanTopic: [],
+            }
+        },
+        //addBoard: function() {
+        //    uidKanbanboard.push({
+        //        title: this.Title,
+        //        text: this.Text
+        //    })
+        //  },
+    },
+    //created() {
+    //    uidRef.on('child_added', snapshot => {
+    //        this.kanbanTopic.push(snapshot.val())
+    //        console.log(snapshot.val())
+    //    })
+    //},
 }).$mount('#app')
 
 /*
