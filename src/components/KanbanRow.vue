@@ -203,9 +203,9 @@ export default {
     //Update
       this.$nextTick(function() {
         const database = firebase.database();
-        //const getUser = firebase.auth().currentUser;
-        //const getUid = getUser.uid;
-        let getRef = database.ref("Rst7gjtdrAaq3ePdBPa24Gi2w4D3");
+        const getUser = firebase.auth().currentUser;
+        const getUid = getUser.uid;
+        let getRef = database.ref(getUid);
         getRef.on("child_added", snapshot => {
           this.kanbanTopic.push({...snapshot.val(),Title:snapshot.key});
         });
